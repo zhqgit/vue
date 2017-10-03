@@ -1,0 +1,65 @@
+{
+  "name": "卜冠今",
+  "res_categories": [
+    {
+      "res_name": "前端",
+      "res_category_set": [
+        "HTML",
+        "CSS",
+        "JS",
+        "UI",
+        "设计模式"
+      ]
+    },
+    {
+      "res_name": "科研",
+      "res_category_set": [
+        "HTML",
+        "CSS",
+        "JS",
+        "UI",
+        "设计模式"
+      ]
+    },
+    {
+      "res_name": "考研",
+      "res_category_set": [
+        "HTML",
+        "CSS",
+        "JS",
+        "UI",
+        "设计模式"
+      ]
+    },
+    {
+      "res_name": "就业实习",
+      "res_category_set": [
+        "HTML",
+        "CSS",
+        "JS",
+        "UI",
+        "设计模式"
+      ]
+    },
+    {
+      "res_name": "实用软件",
+      "res_category_set": [
+        "HTML",
+        "CSS",
+        "JS",
+        "UI",
+        "设计模式"
+      ]
+    }
+    ,{
+      "res_name": "职教动态",
+      "res_category_set": [
+        "HTML",
+        "CSS",
+        "JS",
+        "UI",
+        "设计模式"
+      ]
+    }
+  ]
+}
