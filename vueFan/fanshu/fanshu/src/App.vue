@@ -7,15 +7,7 @@
 <script>
 
 export default {
-  name: 'app',
-  mounted() {
-
-  },
-  created() {
-    console.log(this.$store)
-    console.log(this.$api)
-    
-  }
+  name: 'app'
 }
 </script>
 
@@ -27,6 +19,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   width: 50%;
+  margin-left: 200px;
+  margin-top: 50px;
   /* margin-top: 60px; */
 }
 </style>

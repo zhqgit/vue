@@ -1,31 +1,24 @@
 <template>
-    <div>
-        <p>{{title}}</p>
-        <p>{{content}}</p>
-    </div>
+  <div id="note-editor">
+    <textarea
+      :value="activeNoteText"
+      @input="editNote"
+      class="form-control">
+    </textarea>
+  </div>
 </template>
+
 <script>
+import { editNote } from '../store/actions'
+
 export default {
-    computed: {
-        title() {
-            let id = this.$store.state.active
-            let arr = this.$store.state.todoList
-            let some = arr.find(function(item){
-                // 属性值要使用严格判断
-                return item.id === id
-            })
-            return some.title
-        },
-        content() {
-            let id = this.$store.state.active
-            let arr = this.$store.state.todoList
-            let some = arr.find(function(item){
-                // 属性值要使用严格判断
-                return item.id === id
-            })
-            return some.content
-            
-        }
+  vuex: {
+    getters: {
+      activeNoteText: state => state.activeNote.text
+    },
+    actions: {
+      editNote
     }
+  }
 }
 </script>

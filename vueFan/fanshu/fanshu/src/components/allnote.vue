@@ -1,13 +1,15 @@
 <template>
-    <el-card class="box-card">
-        <div slot="header" class="clearfix">
-            <span style="line-height: 36px;">我的笔记{{ active }}</span>
-            <el-button style="float: right;" type="primary">操作按钮</el-button>
-        </div>
-        <div v-for="item in todoList" :key="item.attributes.tid" class="text item" :data-id="item.attributes.tid" @click="change(item.attributes.tid)">
-            <a href="">{{ item.attributes.title }}</a>
-        </div>
-    </el-card>
+    <el-row>
+        <el-card class="box-card">
+            <div slot="header" class="clearfix">
+                <span style="line-height: 36px;">我的笔记{{ active }}</span>
+                <el-button style="float: right;" type="primary">操作按钮</el-button>
+            </div>
+            <div v-for="item in todoList" :key="item.attributes.tid" class="text item" :data-id="item.attributes.tid" @click="change(item.attributes.tid)">
+                <a href="">{{ item.attributes.title }}</a>
+            </div>
+        </el-card>
+    </el-row>
 </template>
 
 <script>
@@ -41,7 +43,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .text {
     font-size: 14px;
 }
