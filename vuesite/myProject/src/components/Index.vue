@@ -83,7 +83,7 @@
         }
       },
       fn: function () {
-        var _this = this
+        let _this = this
         Axios.get('./data/index.json')
           .then(function (res) {
             _this.msg = res.data.name

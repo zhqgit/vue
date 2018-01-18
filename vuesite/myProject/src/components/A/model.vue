@@ -5,6 +5,12 @@
 
 <script>
 export default {
+
+    let img = new Image();
+img.onload = function(){
+	debugger
+};
+img.src = "https://www.baidu.com/img/baidu_jgylogo3.gif"
     name: 'model',
     data () {
         return {

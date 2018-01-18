@@ -2,7 +2,7 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 
 import getters from './getters'
-import modules from './modules'
+// import modules from './modules'
 import mutations from './mutations'
 import actions from './actions'
 import types from './types'
@@ -12,20 +12,22 @@ Vue.use(Vuex)
 
 const state = {
   user: {
-    userid: localStorage.getItem(Storage.userid),
-    role: localStorage.getItem(Storage.role),
-    password: localStorage.getItem(Storage.password)
+    id: localStorage.getItem(Storage.USER_ID),
+    username: localStorage.getItem(Storage.USER_USERNAME),
+    email: localStorage.getItem(Storage.USER_EMAIL),
+    grade: localStorage.getItem(Storage.USER_GRADE),
+    major: localStorage.getItem(Storage.USER_MAJOR),
+    avatar: localStorage.getItem(Storage.USER_AVATAR)
   }
 }
 
 const store = new Vuex.Store({
-    state,
-    getters,
-    modules,
-    mutations,
-    actions,
-    types
+  state,
+  getters,
+  // modules,
+  mutations,
+  actions,
+  types
 })
-
 
 export default store

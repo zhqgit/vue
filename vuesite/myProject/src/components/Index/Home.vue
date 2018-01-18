@@ -1,9 +1,9 @@
 <template>
-    <div>
+    <div class="container">
         <app-header></app-header>
         <!-- <button @click="btn">修改</button> -->
         <router-view></router-view>
-            <app-footer></app-footer>
+        <!-- <app-footer></app-footer> -->
     </div>
 </template>
 
@@ -12,35 +12,25 @@
 </style>
 
 <script>
-import AppHeader from "@/components/common/Header";
-import AppFooter from "@/components/common/Footer";
+import AppHeader from '@/components/common/Header'
+import AppFooter from '@/components/common/Footer'
 
 export default {
-  name: "Home",
-  data() {
-    return {};
+  name: 'Home',
+  data () {
+    return {}
   },
   components: {
     AppHeader,
     AppFooter
   },
-  methods: {
-    // btn() {
-    //     let params = new URLSearchParams()
-    //     params.append('userid', '20143703048')
-    //     params.append('opwd', '3048')
-    //     params.append('npwd', 'ddd')
-    //     console.log(params)
-    //     console.log(params.keys())
-    //     console.log(params.keys().next())
-    //     console.log(params.has('userid'))
-    //     this.$common.http.post('change_password', params).then(function(response) {
-    //         console.log(response);
-    //     })
-    //         .catch(function(error) {
-    //             console.log(error);
-    //         })
-    // }
-  }
-};
+  methods: {}
+}
 </script>
+
+<style scoped>
+.container {
+  background: rgba(0, 0, 0, 0.65);
+  min-height: 100vh;
+}
+</style>

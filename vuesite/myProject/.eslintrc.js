@@ -17,6 +17,16 @@ module.exports = {
   ],
   // add your custom rules here
   'rules': {
+    // no-var
+    'no-var': 'error',
+    // 强制使用一致的换行风格LF
+    'linebreak-style': ['error', 'unix'],
+    // 强制使用单引号
+    'quotes': ['error', 'single'],
+    // 要求或禁止使用分号而不是 ASI
+    'semi': ['error', 'never'],
+    // 禁止不必要的分号
+    'no-extra-semi': 'error',
     // allow paren-less arrow functions
     'arrow-parens': 0,
     // allow async-await

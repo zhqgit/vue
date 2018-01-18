@@ -1,5 +1,5 @@
 <template>
-    <el-carousel :interval="4000" type="card" height="300px" :autoplay="true">
+    <el-carousel :interval="4000" indicator-position="outside" height="300px" :autoplay="true">
         <el-carousel-item v-for="item in Carousel" :key="item.id">
             <img :src="item.url" alt="">
         </el-carousel-item>
@@ -10,14 +10,14 @@
 // import Leancloud from '@/common/utils/leancloud'
 import Carousel from '@/common/data/carousel'
 export default {
-    name: 'carousel',
-    data() {
-        return {
-            Carousel: Carousel.Carousel
-        }
-    },
-    created() {
+  name: 'carousel',
+  data () {
+    return {
+      Carousel: Carousel.Carousel
     }
+  },
+  created () {
+  }
 }
 
 </script>

@@ -10,12 +10,15 @@ import 'element-ui/lib/theme-default/index.css'
 
 import VueLetterAvatar from 'vue-letter-avatar'
 
+// import VueQuillEditor from 'vue-quill-editor'
+
 import common from './common'
 
 Vue.config.productionTip = false
 
 Vue.use(ElementUI)
 Vue.use(VueLetterAvatar)
+// Vue.use(VueQuillEditor)
 Vue.prototype.$common = common
 /* eslint-disable no-new */
 new Vue({
